@@ -1,37 +1,24 @@
 version: "3.1"
 
 stories:
-  - story: salutation heureuse
+  - story: salutation et demande de fonctionnalités
     steps:
       - intent: saluer
       - action: utter_saluer
-      - intent: humeur_bonne
-      - action: utter_content
+      - intent: demander_fonctionnalites
+      - action: utter_fonctionnalites
 
-  - story: salutation malheureuse
+  - story: demande d'utilisation
     steps:
-      - intent: saluer
-      - action: utter_saluer
-      - intent: humeur_mauvaise
-      - action: utter_encourager
-      - action: utter_demander_aide
+      - intent: demander_utilisation
+      - action: utter_utilisation
 
-  - story: ajouter une tâche
+  - story: demande de contact support
     steps:
-      - intent: ajouter_tache
-      - action: utter_ajouter_tache
+      - intent: demander_contact_support
+      - action: utter_contact_support
 
-  - story: supprimer une tâche
-    steps:
-      - intent: supprimer_tache
-      - action: utter_supprimer_tache
-
-  - story: lister les tâches
-    steps:
-      - intent: lister_taches
-      - action: utter_lister_taches
-
-  - story: dire au revoir
+  - story: au revoir
     steps:
       - intent: au_revoir
       - action: utter_au_revoir

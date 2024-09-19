@@ -3,43 +3,40 @@ version: "3.1"
 intents:
   - saluer
   - au_revoir
-  - affirmer
-  - nier
-  - humeur_bonne
-  - humeur_mauvaise
-  - demander_tache
-  - ajouter_tache
-  - supprimer_tache
-  - lister_taches
-  - bot_challenge
+  - demander_fonctionnalites
+  - demander_utilisation
+  - demander_contact_support
+  - exprimer_frustration
+  - fallback
 
 responses:
   utter_saluer:
-    - text: "Bonjour ! Comment puis-je vous aider avec vos tâches aujourd'hui ?"
-
-  utter_encourager:
-    - text: "Ne vous inquiétez pas, je suis là pour vous aider à gérer vos tâches."
-
-  utter_demander_aide:
-    - text: "Est-ce que je peux faire autre chose pour vous ?"
-
-  utter_content:
-    - text: "Excellent ! N'hésitez pas si vous avez besoin d'aide pour vos tâches."
+    - text: "Bonjour ! Je suis l'assistant de Task Manager. Comment puis-je vous aider ?"
+    - text: "Salut ! Comment je peux t'aider avec Task Manager aujourd'hui ?"
+    - text: "Coucou ! Besoin d'un coup de main avec Task Manager ?"
 
   utter_au_revoir:
-    - text: "Au revoir ! N'oubliez pas vos tâches !"
+    - text: "Merci d'avoir utilisé Task Manager. À bientôt !"
 
-  utter_iamabot:
-    - text: "Je suis un assistant virtuel, conçu pour vous aider à gérer vos tâches."
+  utter_fonctionnalites:
+    - text: "Task Manager vous permet de créer, modifier et supprimer des tâches, de les organiser par priorité et de définir des rappels."
+    - text: "Task Manager, c'est ton assistant perso pour gérer tes tâches. Tu peux créer, modifier, supprimer des tâches, les organiser par priorité et même mettre des rappels. C'est comme avoir un petit secrétaire dans ta poche !"
 
-  utter_ajouter_tache:
-    - text: "D'accord, j'ai ajouté cette tâche à votre liste."
+  utter_utilisation:
+    - text: "Pour utiliser Task Manager, commencez par créer une tâche en cliquant sur le bouton '+'. Vous pouvez ensuite la modifier en cliquant dessus, ou la supprimer en la faisant glisser vers la droite."
 
-  utter_supprimer_tache:
-    - text: "La tâche a été supprimée de votre liste."
+  utter_contact_support:
+    - text: "Pour contacter le support, veuillez envoyer un email à support@tskmngr.fr ou utiliser le formulaire de contact dans les paramètres de l'application."
+    - text: "Pas de souci, je comprends que tu aies besoin d'aide. Le plus simple, c'est d'envoyer un mail à support@tskmngr.fr. Sinon, dans l'app, va dans Paramètres > Contact, tu trouveras un formulaire super simple à remplir."
 
-  utter_lister_taches:
-    - text: "Voici la liste de vos tâches actuelles :"
+  utter_handle_frustration:
+    - text: "Oups, je sens que je t'ai énervé. Ce n'était pas mon intention. Essayons de reprendre depuis le début. Qu'est-ce que tu voudrais savoir exactement sur Task Manager ?"
+    - text: "Oula, calme toi mon reuf ! Ne t'inquiètes pas ça va bien se passer ;)"
+
+  utter_fallback:
+    - text: "Désolé, je crois que j'ai pas bien saisi. Tu peux reformuler ou me poser une question sur les fonctionnalités de Task Manager ?"
+    - text: "Je suis désolé, je n'ai pas compris. Peux-tu répéter ou me demander quelque chose sur Task Manager ?"
+    - text: "Un peu hors sujet mon reuf, on est là pour parler de Task Manager, pas pour que tu me racontes ta vie ! Tu veux savoir quelque chose sur l'app ?"
 
 session_config:
   session_expiration_time: 60

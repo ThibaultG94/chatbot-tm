@@ -1,32 +1,37 @@
 version: "3.1"
 
 rules:
-  - rule: Dire au revoir chaque fois que l'utilisateur dit au revoir
+  - rule: Saluer en retour
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+
+  - rule: Dire au revoir
     steps:
       - intent: au_revoir
       - action: utter_au_revoir
 
-  - rule: Dire 'Je suis un bot' chaque fois que l'utilisateur demande
+  - rule: Répondre aux questions sur les fonctionnalités
     steps:
-      - intent: bot_challenge
-      - action: utter_iamabot
+      - intent: demander_fonctionnalites
+      - action: utter_fonctionnalites
 
-  - rule: Ajouter une tâche
+  - rule: Expliquer l'utilisation
     steps:
-      - intent: ajouter_tache
-      - action: utter_ajouter_tache
+      - intent: demander_utilisation
+      - action: utter_utilisation
 
-  - rule: Supprimer une tâche
+  - rule: Fournir les informations de contact du support
     steps:
-      - intent: supprimer_tache
-      - action: utter_supprimer_tache
+      - intent: demander_contact_support
+      - action: utter_contact_support
 
-  - rule: Lister les tâches
+  - rule: Gérer la frustration
     steps:
-      - intent: lister_taches
-      - action: utter_lister_taches
+      - intent: exprimer_frustration
+      - action: utter_handle_frustration
 
-  - rule: Saluer l'utilisateur
+  - rule: Gérer les cas non prévus
     steps:
-      - intent: saluer
-      - action: utter_saluer
+      - intent: fallback
+      - action: utter_fallback

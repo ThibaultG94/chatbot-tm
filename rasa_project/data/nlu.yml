@@ -3,83 +3,110 @@ version: "3.1"
 nlu:
   - intent: saluer
     examples: |
-      - Bonjour
       - Salut
-      - Hey
+      - Hello
       - Coucou
+      - Yo
+      - Hé
+      - Bonjour
       - Bonsoir
+      - Salutations
+      - Wesh
 
   - intent: au_revoir
     examples: |
       - Au revoir
       - À plus tard
-      - À bientôt
-      - Bonne journée
-      - Adieu
+      - Merci, c'est tout
+      - C'est tout pour moi
+      - Je me tire !
+      - Bye
+      - Des bisous
+      - À la prochaine
+      - A plus dans l'bus !
 
-  - intent: affirmer
+  - intent: demander_fonctionnalites
     examples: |
-      - oui
-      - en effet
-      - bien sûr
-      - c'est correct
-      - c'est ça
+      - Que peut faire cette application ?
+      - Quelles sont les fonctionnalités de Task Manager ?
+      - Que fait Task Manager ?
+      - Pouvez-vous me décrire les caractéristiques de l'app ?
+      - C'est quoi task manager ?
+      - Qu'est-ce que ça fait cette app ?
+      - Tu peux m'expliquer à quoi ça sert ?
+      - C'est pour faire quoi en fait ?
+      - Quelles sont les fonctionnalités ?
+      - Ça fait quoi concrètement ?
 
-  - intent: nier
+  - intent: demander_utilisation
     examples: |
-      - non
-      - jamais
-      - je ne pense pas
-      - pas du tout
-      - certainement pas
+      - Comment utiliser Task Manager ?
+      - Comment créer une tâche ?
+      - Comment supprimer une tâche ?
+      - Pouvez-vous m'expliquer comment ça marche ?
 
-  - intent: humeur_bonne
+  - intent: demander_contact_support
     examples: |
-      - parfait
-      - très bien
-      - génial
-      - incroyable
-      - je me sens bien
+      - Comment contacter le support ?
+      - J'ai besoin d'aide, qui puis-je contacter ?
+      - Où puis-je obtenir de l'aide ?
+      - Y a-t-il un service client ?
+      - J'ai besoin d'aide
+      - Comment je contacte le support ?
+      - Y a un numéro pour appeler ?
+      - Je peux parler à quelqu'un ?
+      - Où je trouve le formulaire de contact ?
+      - C'est quoi l'adresse email du support ?
+      - Comment je fais pour contacter le support ?
+      - Je veux parler à un humain
+      - Je veux parler à un conseiller
+      - Je veux parler à un assistant
+      - Je veux parler à un représentant
+      - Je veux parler à un agent
+      - Je veux parler à un technicien
+      - Je veux parler à un expert
+      - Je veux parler à un professionnel
+      - Je veux parler à un spécialiste
+      - Je veux parler à un conseiller client
+      - Je veux parler à un conseiller technique
+      - Je veux parler à un conseiller support
+      - Je veux parler à un conseiller service client
 
-  - intent: humeur_mauvaise
+  - intent: exprimer_frustration
     examples: |
-      - triste
-      - très mauvais
-      - malheureux
-      - pas bien
-      - terrible
+      - T'es nul comme bot
+      - Tu comprends rien à ce que je dis
+      - C'est pas du tout ce que je demande
+      - T'es vraiment pas utile
+      - Mais tu te fous de ma gueule ?
+      - T'es con ou quoi ?
+      - Tu sers à rien
+      - Tu me saoules
+      - Tu m'énerves
+      - Tu me casses les couilles
+      - Tu me casses les pieds
+      - Tu me casses les bonbons
+      - Tu me casses les burnes
+      - Tu me casses les noix
+      - Tu me casses les roustons
+      - Tu me casses les roubignoles
+      - Tu me casses les gonades
+      - Tu me casses les testicules
+      - Tu me casses les valseuses
+      - Tu me casses les bijoux de famille
+      - Tu me casses les joyeuses
+      - Tu me casses les coucougnettes
+      - Tu me casses les roubignolles
 
-  - intent: demander_tache
+  - intent: fallback
     examples: |
-      - Quelle est ma prochaine tâche ?
-      - Rappelle-moi ce que je dois faire
-      - Quelles sont mes tâches pour aujourd'hui ?
-      - As-tu des tâches pour moi ?
-
-  - intent: ajouter_tache
-    examples: |
-      - J'ai une nouvelle tâche
-      - Ajoute une tâche à ma liste
-      - Je dois faire quelque chose de nouveau
-      - Peux-tu ajouter une tâche ?
-
-  - intent: supprimer_tache
-    examples: |
-      - Supprime une tâche
-      - J'ai terminé une tâche
-      - Retire ça de ma liste
-      - Cette tâche est faite
-
-  - intent: lister_taches
-    examples: |
-      - Montre-moi mes tâches
-      - Quelles sont mes tâches en cours ?
-      - Liste toutes mes tâches
-      - J'ai besoin de voir ma liste de tâches
-
-  - intent: bot_challenge
-    examples: |
-      - Es-tu un bot ?
-      - Es-tu humain ?
-      - Est-ce que je parle à un bot ?
-      - Est-ce que je parle à un humain ?
+      - blablabla
+      - xyz123
+      - Je veux des pizzas
+      - Parle-moi de la philosophie
+      - Quel est le sens de la vie ?
+      - Quelle est la capitale de la France ?
+      - Quelle est la couleur du cheval blanc d'Henri IV ?
+      - Quelle est la réponse à la question ultime sur la vie, l'univers et le reste ?
+      - Quelle est la réponse à la grande question sur la vie, l'univers et le reste ?
+      - Quelle est la réponse à la grande question sur la vie, l'univers et le reste, le tout ?
