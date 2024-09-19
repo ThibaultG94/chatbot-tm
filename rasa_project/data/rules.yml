@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+  - rule: Dire au revoir chaque fois que l'utilisateur dit au revoir
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
+
+  - rule: Dire 'Je suis un bot' chaque fois que l'utilisateur demande
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Ajouter une tâche
+    steps:
+      - intent: ajouter_tache
+      - action: utter_ajouter_tache
+
+  - rule: Supprimer une tâche
+    steps:
+      - intent: supprimer_tache
+      - action: utter_supprimer_tache
+
+  - rule: Lister les tâches
+    steps:
+      - intent: lister_taches
+      - action: utter_lister_taches
+
+  - rule: Saluer l'utilisateur
+    steps:
+      - intent: saluer
+      - action: utter_saluer

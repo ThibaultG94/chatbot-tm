@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - au_revoir
+  - affirmer
+  - nier
+  - humeur_bonne
+  - humeur_mauvaise
+  - demander_tache
+  - ajouter_tache
+  - supprimer_tache
+  - lister_taches
+  - bot_challenge
+
+responses:
+  utter_saluer:
+    - text: "Bonjour ! Comment puis-je vous aider avec vos tâches aujourd'hui ?"
+
+  utter_encourager:
+    - text: "Ne vous inquiétez pas, je suis là pour vous aider à gérer vos tâches."
+
+  utter_demander_aide:
+    - text: "Est-ce que je peux faire autre chose pour vous ?"
+
+  utter_content:
+    - text: "Excellent ! N'hésitez pas si vous avez besoin d'aide pour vos tâches."
+
+  utter_au_revoir:
+    - text: "Au revoir ! N'oubliez pas vos tâches !"
+
+  utter_iamabot:
+    - text: "Je suis un assistant virtuel, conçu pour vous aider à gérer vos tâches."
+
+  utter_ajouter_tache:
+    - text: "D'accord, j'ai ajouté cette tâche à votre liste."
+
+  utter_supprimer_tache:
+    - text: "La tâche a été supprimée de votre liste."
+
+  utter_lister_taches:
+    - text: "Voici la liste de vos tâches actuelles :"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

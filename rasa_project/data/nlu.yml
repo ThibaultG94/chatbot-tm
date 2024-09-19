@@ -1,0 +1,85 @@
+version: "3.1"
+
+nlu:
+  - intent: saluer
+    examples: |
+      - Bonjour
+      - Salut
+      - Hey
+      - Coucou
+      - Bonsoir
+
+  - intent: au_revoir
+    examples: |
+      - Au revoir
+      - À plus tard
+      - À bientôt
+      - Bonne journée
+      - Adieu
+
+  - intent: affirmer
+    examples: |
+      - oui
+      - en effet
+      - bien sûr
+      - c'est correct
+      - c'est ça
+
+  - intent: nier
+    examples: |
+      - non
+      - jamais
+      - je ne pense pas
+      - pas du tout
+      - certainement pas
+
+  - intent: humeur_bonne
+    examples: |
+      - parfait
+      - très bien
+      - génial
+      - incroyable
+      - je me sens bien
+
+  - intent: humeur_mauvaise
+    examples: |
+      - triste
+      - très mauvais
+      - malheureux
+      - pas bien
+      - terrible
+
+  - intent: demander_tache
+    examples: |
+      - Quelle est ma prochaine tâche ?
+      - Rappelle-moi ce que je dois faire
+      - Quelles sont mes tâches pour aujourd'hui ?
+      - As-tu des tâches pour moi ?
+
+  - intent: ajouter_tache
+    examples: |
+      - J'ai une nouvelle tâche
+      - Ajoute une tâche à ma liste
+      - Je dois faire quelque chose de nouveau
+      - Peux-tu ajouter une tâche ?
+
+  - intent: supprimer_tache
+    examples: |
+      - Supprime une tâche
+      - J'ai terminé une tâche
+      - Retire ça de ma liste
+      - Cette tâche est faite
+
+  - intent: lister_taches
+    examples: |
+      - Montre-moi mes tâches
+      - Quelles sont mes tâches en cours ?
+      - Liste toutes mes tâches
+      - J'ai besoin de voir ma liste de tâches
+
+  - intent: bot_challenge
+    examples: |
+      - Es-tu un bot ?
+      - Es-tu humain ?
+      - Est-ce que je parle à un bot ?
+      - Est-ce que je parle à un humain ?

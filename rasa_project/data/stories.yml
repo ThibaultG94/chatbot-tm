@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+  - story: salutation heureuse
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+      - intent: humeur_bonne
+      - action: utter_content
+
+  - story: salutation malheureuse
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+      - intent: humeur_mauvaise
+      - action: utter_encourager
+      - action: utter_demander_aide
+
+  - story: ajouter une tâche
+    steps:
+      - intent: ajouter_tache
+      - action: utter_ajouter_tache
+
+  - story: supprimer une tâche
+    steps:
+      - intent: supprimer_tache
+      - action: utter_supprimer_tache
+
+  - story: lister les tâches
+    steps:
+      - intent: lister_taches
+      - action: utter_lister_taches
+
+  - story: dire au revoir
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
